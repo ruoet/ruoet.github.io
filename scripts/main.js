@@ -10,11 +10,12 @@ document.querySelector('html').onclick = function(){
 var myimage = document.querySelector('img');
 myimage.onclick = function(){
 	var mysrc = myimage.getAttribute('src');
-	if(mysrc === 'images/5642.jpg_wh300.jpg'){
-		myimage.setAttribute('src', 'images/8213080_000_thumb.jpg');
-	}
-	else{
-		myimage.setAttribute('src', 'images/5642.jpg_wh300.jpg');
+	if(mysrc === 'images/1.jpg'){
+		myimage.setAttribute('src', 'images/2.jpg');
+	}else if(mysrc === 'images/2.jpg'){
+		myimage.setAttribute('src', 'images/3.jpg');
+	}else{
+		myimage.setAttribute('src', 'images/1.jpg');
 	}
 }
 
@@ -37,10 +38,10 @@ function resetName(){
 		myHeading.innerHTML = 'html is interesting, ' + storedName;
 	}
 }
-resetName();
 
+/*
 mybutton.onclick = function(){
 	
 	setUserName();
 }
-
+*/
